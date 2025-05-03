@@ -29,7 +29,7 @@ function App() {
         <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             title="2FA and Oauth 2.0 System"
-            description="A full-stack e-commerce application built with React and Node.js."
+            description="2FA/OAuth 2.0 system with a Python demo-service, Kong API gateway (token handling), and Redis caching, deployed using Docker"
             tech={['Python', 'Docker', 'Redis', 'MySQL', 'Kong', 'Lua']}
             icon={<Code sx={{ color: '#CFCAA8' }} />}
             color="#CFCAA8"
@@ -49,7 +49,7 @@ function App() {
         <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             title="E-Library Web App"
-            description="A full-stack e-commerce application built with React and Node.js."
+            description="Web application for an online library with features like e-books, newsroom and youtube videos"
             tech={['JavaScript', 'HTML', 'CSS',]}
             icon={<Web sx={{ color: '#C0C0C0' }} />}
             color="#C0C0C0"
@@ -59,7 +59,7 @@ function App() {
         <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             title="Tranced"
-            description="A full-stack e-commerce application built with React and Node.js."
+            description="An android music and video streaming application with online/offline capabilities and integrated chat"
             tech={['Java', 'xml', 'Firebase', 'Android', 'Spotify.API', 'Youtube.API']}
             icon={<Android sx={{ color: '#4caf50' }} />}
             color="#4caf50"
@@ -69,8 +69,8 @@ function App() {
         <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
             title="Bookie"
-            description="A full-stack e-commerce application built with React and Node.js."
-            tech={['Java', 'xml', 'Android', 'Google.API', 'Youtube.API']}
+            description="An android e-books application"
+            tech={['Java', 'xml', 'Android', 'Google.API']}
             icon={<Android sx={{ color: '#4caf50' }} />}
             color="#4caf50"
             links={{ github: 'https://github.com/GarvitBansal2001/Bookie'}}
