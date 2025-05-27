@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import clsx from 'clsx'
 import { twMerge } from 'tailwind-merge'
+import { Collapse, Box } from '@mui/material';
 import './../style.css'
 import {
   CodeIcon,
@@ -201,21 +202,15 @@ const ProjectCard = ({ project }) => {
             </div>
           )}
         </CardHeader>
-        <AnimatePresence>
-          {isOpen && (
-            <CardContent>
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3 }}
-                className="pt-4 space-y-4"
-              >
+        {isOpen && (
+          <CardContent>
+            <Collapse in={isOpen} timeout={300} unmountOnExit>
+              <Box className="pt-4 space-y-4">
                 {project.content}
-              </motion.div>
-            </CardContent>
-          )}
-        </AnimatePresence>
+              </Box>
+            </Collapse>
+          </CardContent>
+        )}
       </Card>
     </motion.div>
   );
